@@ -85596,6 +85596,18 @@ PrefabInstance:
       propertyPath: speedCam
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 596339641988985083, guid: 461a54ed0d6b8164b993c7f10fac3055, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.5283019
+      objectReference: {fileID: 0}
+    - target: {fileID: 596339641988985083, guid: 461a54ed0d6b8164b993c7f10fac3055, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596339641988985083, guid: 461a54ed0d6b8164b993c7f10fac3055, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.2113208
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 461a54ed0d6b8164b993c7f10fac3055, type: 3}
 --- !u!1001 &1375019840125776178
@@ -86099,6 +86111,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -5177388603050735206, guid: 71ebafeef3c03457483266a33ab2b270, type: 3}
+    - target: {fileID: 6289828819488078901, guid: f7f528dfd2dc2e84783c6fa952f3af7d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289828819488078901, guid: f7f528dfd2dc2e84783c6fa952f3af7d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6289828819488078902, guid: f7f528dfd2dc2e84783c6fa952f3af7d, type: 3}
       propertyPath: speed
       value: 5
@@ -86181,6 +86201,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f528dfd2dc2e84783c6fa952f3af7d, type: 3}
+--- !u!1 &6289828821273779107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6289828819488078897, guid: f7f528dfd2dc2e84783c6fa952f3af7d, type: 3}
+  m_PrefabInstance: {fileID: 6289828821273779106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6289828821273779108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6289828821273779107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02da4097f170a24481d528f3d1dc891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 6289828821273779107}
 --- !u!1001 &7332954032878972543
 PrefabInstance:
   m_ObjectHideFlags: 0
