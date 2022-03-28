@@ -60,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
         if (CrossPlatformInputManager.GetButtonDown("Jump")||Input.GetButtonDown("Jump"))
         {
             Jump();
+            isGrounded = false;
         }
         CheckGrounded();
 
@@ -101,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Jump ()
     {
-        if(isGrounded || jumpCount < extraJump)
+        if(isGrounded|| jumpCount < extraJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
             jumpCount++;
@@ -111,11 +112,11 @@ public class PlayerMovement : MonoBehaviour
     }
     void CheckGrounded()
     {
-        if(Physics2D.OverlapCircle(feet.position, 0.3f, groundLayer))
+        if(Physics2D.OverlapCircle(feet.position, 0.25f, groundLayer))
         {
             isGrounded = true;
             jumpCount = 0;
-            jumpCoolDown = Time.time + 0.2f;
+            jumpCoolDown = Time.time + 0.04f;
         
         }
         else if (Time.time < jumpCoolDown)
